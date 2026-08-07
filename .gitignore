@@ -1,0 +1,15 @@
+# Datasets — large media, never commit
+data/
+
+# Locally cached wheels (opencv is ~57 MB)
+vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# OS / editor
+.DS_Store

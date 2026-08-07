@@ -1,0 +1,30 @@
+[project]
+name = "mavis"
+version = "0.1.0"
+description = "Memory-Aware Visual Inference Scheduler"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    # headless: no GUI bindings, ~40 MB instead of ~70 MB. The demo writes an
+    # MP4 rather than opening a window, so imshow is not needed (and does not
+    # work under WSL anyway) — `mavis demo --show` degrades with a warning.
+    "opencv-python-headless>=4.9",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+snowflake = ["snowflake-connector-python>=3.12"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+mavis = "mavis.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mavis"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
