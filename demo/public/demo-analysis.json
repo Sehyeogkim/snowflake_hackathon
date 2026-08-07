@@ -1,0 +1,23 @@
+{
+  "clip_id": "fa9b060f8225ccef",
+  "dataset_split": "held-out test",
+  "duration_s": 17.0161,
+  "model": "gpt-5.6-terra",
+  "ground_truth": "safe_walkway_violation",
+  "prediction": "safe_walkway_violation",
+  "scores": {
+    "safe_walkway": 0.08,
+    "safe_walkway_violation": 0.92
+  },
+  "scene": "Across the sequence, a person walks outside the marked green pedestrian walkway, moving through the adjacent machine/work area rather than remaining within the designated route.",
+  "risk": 0.92,
+  "input_tokens": 2031,
+  "output_tokens": 85,
+  "total_tokens": 2116,
+  "efficiency": {
+    "evaluated_clips": 8,
+    "dense_baseline_tokens": 71254,
+    "mavis_tokens": 10063,
+    "token_reduction_pct": 85.87728408229714
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "pilot_only",
+  "evaluated_clips": 8,
+  "tokens": {
+    "dense_baseline": 71254,
+    "mavis": 10063,
+    "reduction_pct": 85.87728408229714
+  },
+  "quality": {
+    "ground_truth_accuracy": {
+      "correct": 5,
+      "total": 8,
+      "pct": 62.5
+    },
+    "unsafe_recall": {
+      "correct": 3,
+      "total": 4,
+      "pct": 75.0
+    },
+    "provider_agreement": {
+      "correct": 5,
+      "total": 8,
+      "pct": 62.5
+    }
+  },
+  "gates": {
+    "token_reduction_target_pct": 85.0,
+    "token_reduction_passed": true,
+    "overall_passed": false
+  },
+  "note": "The token target passed, but this small pilot did not pass the quality gate. Do not present it as final benchmark evidence."
+}

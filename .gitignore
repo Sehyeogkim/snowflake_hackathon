@@ -1,15 +1,19 @@
-# Datasets — large media, never commit
-data/
-
-# Locally cached wheels (opencv is ~57 MB)
-vendor/
-
-# Python
-__pycache__/
-*.py[cod]
 .venv/
-venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
 .env
-
-# OS / editor
-.DS_Store
+.env.*
+!.env.example
+data/raw/
+data/work/
+outputs/
+demo/node_modules/
+demo/dist/
+demo/.vinext/
+demo/.wrangler/
+demo/.next/
+*.sqlite3
+*.joblib
+*.npz

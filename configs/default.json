@@ -1,0 +1,29 @@
+{
+  "labels": [
+    "safe_walkway",
+    "safe_walkway_violation",
+    "authorized_intervention",
+    "unauthorized_intervention",
+    "closed_panel_cover",
+    "opened_panel_cover",
+    "safe_carrying",
+    "carrying_overload_with_forklift"
+  ],
+  "unsafe_labels": [
+    "safe_walkway_violation",
+    "unauthorized_intervention",
+    "opened_panel_cover",
+    "carrying_overload_with_forklift"
+  ],
+  "cheap_model": "gemini-2.5-flash-lite",
+  "strong_model": "gemini-3.1-pro",
+  "analysis_fps": 2.0,
+  "scan_width": 192,
+  "jpeg_quality": 85,
+  "max_seed_clips": 300,
+  "max_workers": 8,
+  "actions": ["cheap_single", "strong_single", "strong_multi"],
+  "crop_strong": false,
+  "prompt_version": "mavis-safety-v1",
+  "safety_recall_tolerance_pp": 2.0
+}

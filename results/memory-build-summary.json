@@ -1,0 +1,11 @@
+{
+  "dataset_clips": 691,
+  "seed_experiences": 300,
+  "visual_memory_entries": 300,
+  "counterfactual_audits": 32,
+  "development_clips": 57,
+  "heldout_test_clips": 300,
+  "exact_cross_split_duplicate_pairs": 0,
+  "experience_source": "Gemini dense 10 FPS teacher runs evaluated against dataset labels",
+  "memory_role": "Store evaluated routing lessons, unsafe false-negative guardrails, and visually similar evidence signatures"
+}
