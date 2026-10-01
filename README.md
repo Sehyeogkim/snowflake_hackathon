@@ -3,6 +3,12 @@
 > Not every frame deserves intelligence.
 > Remember what was useful. Reason only when it is worth the cost.
 
+## Overall architecture
+
+![MAVIS overall architecture: seed memory construction and planned runtime inference](assets/mavis-overall-architecture.png)
+
+The diagram separates seed-memory construction from planned runtime execution. Its quantitative annotations have not been verified by a live Snowflake benchmark; see [Status](#status).
+
 Running a strong VLM on every CCTV frame understands far more than rule-based CV
 — a worker drifting into a forklift's path, a load that is becoming unstable, a
 near-miss that only exists across time. It also costs more than anyone wants to
